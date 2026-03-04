@@ -1,0 +1,91 @@
+﻿/* Body and general text */
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;      /* White background */
+    color: #0a1f44;           /* Dark blue text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #007bff;      /* Blue header */
+    color: #ffffff;            /* White text in header */
+    padding: 25px;
+}
+
+header h1 { margin: 0; font-size: 2.5em; }
+header p { margin: 5px 0 0 0; }
+
+/* Games container */
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Each game card */
+.game-card {
+    background: #f0f8ff;      /* Light blue card */
+    border-radius: 10px;
+    padding: 15px;
+    width: 320px;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+/* Game iframe */
+.game-card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+/* Game title */
+.game-card h2 { 
+    margin: 10px 0;
+    color: #0a1f44;          /* Dark blue text */
+}
+
+/* Buttons */
+.buttons { margin-top: 10px; }
+.buttons a {
+    display: inline-block;
+    background: #007bff;      /* Blue button */
+    color: #ffffff;           /* White text */
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.buttons a:hover { background: #0056b3; }
+
+/* Disabled buttons */
+.disabled {
+    background: #cccccc;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .game-card { width: 90%; }
+.play-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.play-btn:hover{
+    background:#1e7e34;
+}
+}
